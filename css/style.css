@@ -25,6 +25,12 @@ body {
   background: #f6f6f6;
   font-size: 18px;
 }
+body.no-scroll {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  overflow: hidden;
+}
 @media (max-width: 767px) {
   body {
     font-size: 15px;

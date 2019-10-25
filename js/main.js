@@ -105,7 +105,7 @@ menuBG.addEventListener('click', function (e) {
     navigation.style.display = 'none';
     socialNavigation.style.display = 'none';
     menuBG.style.display = 'none';
-    body.style.overflow = 'auto';
+    body.classList.remove('no-scroll')
 })
 
 var navigationItems = document.querySelectorAll('.navigation-list a');
@@ -115,6 +115,6 @@ for (var i = 0; i < navigationItems.length; i++) {
         navigation.style.display = 'none';
         socialNavigation.style.display = 'none';
         menuBG.style.display = 'none';
-        body.style.overflow = 'auto';
+        body.classList.add('no-scroll');
     })
 }
