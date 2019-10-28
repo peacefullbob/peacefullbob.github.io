@@ -775,7 +775,7 @@ h3 {
   }
 }
 .gallery a img {
-  max-width: 100%;
+  width: 100%;
   height: auto!important;
 }
 .video-slider {
