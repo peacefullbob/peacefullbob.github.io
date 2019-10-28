@@ -772,6 +772,8 @@ h3 {
 @media (max-width: 450px) {
   .gallery-link {
     width: auto;
+    display: block;
+    line-height: 0;
   }
 }
 .gallery a img {
