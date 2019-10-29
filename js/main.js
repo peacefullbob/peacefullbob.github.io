@@ -89,13 +89,13 @@ toggleBurger.addEventListener('click', function(e) {
         navigation.style.display = 'none';
         socialNavigation.style.display = 'none';
         menuBG.style.display = 'none';
-        body.style.overflow = 'auto';
+        body.classList.remove('no-scroll');
     } else {
         toggleBurger.classList.add('open');
         navigation.style.display = 'block';
         socialNavigation.style.display = 'flex';
         menuBG.style.display = 'block';
-        body.style.overflow = 'hidden';
+        body.classList.add('no-scroll');
     }
 });
 
@@ -115,6 +115,6 @@ for (var i = 0; i < navigationItems.length; i++) {
         navigation.style.display = 'none';
         socialNavigation.style.display = 'none';
         menuBG.style.display = 'none';
-        body.classList.add('no-scroll');
+        body.classList.remove('no-scroll');
     })
 }

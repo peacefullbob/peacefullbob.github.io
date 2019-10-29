@@ -742,6 +742,14 @@ h3 {
   height: 100vh;
   width: 100vw;
 }
+@media (max-width: 320px) {
+  .big-background-container {
+    background-image: url("../img/mobile-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
 .big-background-container video {
   position: absolute;
   top: 0;
@@ -749,12 +757,20 @@ h3 {
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
 }
+@media (max-width: 320px) {
+  .big-background-container video {
+    display: none;
+  }
+}
 .gallery {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .gallery-link {
   display: -webkit-box;
@@ -763,21 +779,18 @@ h3 {
   width: 33.33%;
   height: auto;
   overflow: hidden;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media (max-width: 767px) {
   .gallery-link {
     width: 50%;
   }
 }
-@media (max-width: 450px) {
-  .gallery-link {
-    width: auto;
-  }
-}
 .gallery a img {
-  width: 100%;
-  height: auto!important;
+  max-width: 100%;
+  height: auto;
 }
 .video-slider {
   height: 100vh;
@@ -1061,7 +1074,7 @@ h3 {
   z-index: 100;
 }
 .gallery-popup img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 .close-gallery {
