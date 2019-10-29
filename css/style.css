@@ -763,6 +763,7 @@ h3 {
   width: 33.33%;
   height: auto;
   overflow: hidden;
+  align-items: center;
 }
 @media (max-width: 767px) {
   .gallery-link {
@@ -772,8 +773,6 @@ h3 {
 @media (max-width: 450px) {
   .gallery-link {
     width: auto;
-    display: block;
-    line-height: 0;
   }
 }
 .gallery a img {
