@@ -731,19 +731,23 @@ h3 {
 }
 @media (max-width: 768px) {
   .video-popup {
-    width: 100%;
+    padding: 20px;
   }
 }
-.video-popup iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
+@media (max-width: 768px) {
+  .video-popup iframe {
+    width: 100%;
+    min-width: 280px;
+  }
 }
 .video-popup .close-button {
-  right: -60px;
-  top: -60px;
+  right: -25px;
+  top: -25px;
+}
+.video-wrapper {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
 }
 .gallery {
   display: -webkit-box;
