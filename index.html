@@ -31,10 +31,10 @@
     </div>
 
     <div class="big-background-container">
-        <video autoplay="" loop="">
-            <source src="img/video-bg.mp4" type="video/mp4">
-            <source src="img/video-bg.webm" type="video/webm">
-            <source src="img/video-bg.ogv" type="video/ogg">
+        <video autoplay="autoplay" muted="" loop="loop" controls="controls" poster="/img/video-poster.jpg">
+            <source src="img/video-bg.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
+            <source src="img/video-bg.webm" type="video/webm; codecs=&quot;vp8, vorbis&quot;">
+            <source src="img/video-bg.ogv" type="video/ogg; codecs=&quot;theora, vorbis&quot;">
         </video>
     </div>
     <section class="logo-wrapper ">
@@ -956,7 +956,7 @@
         </nav>
     </div>
     <article id="me" class="aboutme">
-        <div class="photo-part"><img src="img/about-me.jpg"></div>
+        <div class="photo-part"><img src="img/about-me.JPG"></div>
         <div class="text-part">
             <h2>Обо мне</h2>
             <p>Привет! Меня зовут Андрей Кудашев. Упорно занимаюсь и играю на барабанах с пятнадцати лет.
@@ -967,14 +967,14 @@
                 Считаю, что главное в работе - уделять внимание каждому этапу создания музыки от репетиции до выступления.</p>
         </div>
     </article>
-    <div id="video" class="wrap">
-        <div id="slider" class="video">
+    <div class="wrap">
+        <div class="video">
             <div class="video-item video-item1">
                 <div class="video-content">
                     <span>Juicy J, Wiz Khalifa & Ty Dolla $ign — Shell Shocked (OST Ninja turtles)<br>
                         Drum cover by Andrey Kudashev
                     </span>
-                    <a class="video-button" href="#video1">Смотреть видео</a>
+                    <a class="video-button" href="https://www.youtube.com/embed/-cYK7PeAa2A">Смотреть видео</a>
                     <div class="overlay" id="video1"></div>
                 </div>
             </div>
@@ -983,7 +983,7 @@
                     <span>Время и cтекло — Имя 505<br>
                         Drum cover by Andrey Kudashev
                     </span>
-                    <a class="video-button" href="#video1">Смотреть видео</a>
+                    <a class="video-button" href="https://www.youtube.com/embed/OCr8p0cxJJ0">Смотреть видео</a>
                     <div class="overlay" id="video2"></div>
                 </div>
             </div>
@@ -992,7 +992,7 @@
                     <span>Скриптонит — Цепи (ft. 104)<br>
                         Drum cover by Andrey Kudashev
                     </span>
-                    <a class="video-button" href="#video1">Смотреть видео</a>
+                    <a class="video-button" href="https://www.youtube.com/embed/61KRusDocyA">Смотреть видео</a>
                     <div class="overlay" id="video3"></div>
                 </div>
             </div>
@@ -1001,9 +1001,15 @@
                     <span>Skillet — Monster<br>
                         Drum cover by Andrey Kudashev
                     </span>
-                    <a class="video-button" href="#video1">Смотреть видео</a>
+                    <a class="video-button" href="https://www.youtube.com/embed/a_O5cNjp2FQ">Смотреть видео</a>
                     <div class="overlay" id="video4"></div>
                 </div>
+            </div>
+        </div>
+        <div class="video-popup">
+            <div class="video-wrapper">
+                <div class="close-button"></div>
+                <iframe width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
             </div>
         </div>
     </div>
@@ -1062,7 +1068,7 @@
         </a>
         <div class="gallery-popup">
             <div id="arrow-left-gallery" class="arrow arrow-left"></div>
-            <button class="close-gallery"></button>
+            <button class="close-button"></button>
             <img src="#" alt="">
             <div id="arrow-right-gallery" class="arrow arrow-right"></div>
         </div>

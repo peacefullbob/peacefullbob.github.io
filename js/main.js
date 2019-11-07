@@ -37,7 +37,7 @@ var galleryItems = document.querySelectorAll('.gallery-link');
 var galleryItemsArray = [];
 var galleryPopup = document.querySelector('.gallery-popup');
 var galleryPopupImage = galleryPopup.querySelector('.gallery-popup img');
-var closeGalleryPopup = galleryPopup.querySelector('.close-gallery');
+var closeGalleryPopup = galleryPopup.querySelector('.close-button');
 var rightArrowGallery = document.querySelector('#arrow-left-gallery');
 var leftArrowGallery = document.querySelector('#arrow-right-gallery');
 
@@ -75,6 +75,20 @@ leftArrowGallery.addEventListener('click', function minusSlide() {
 function currentSlide(n) {
     showSlidesPhoto(slideIndex = n, galleryItems, galleryPopupImage);
 }
+
+/*Video popup*/
+var videoPopup = document.querySelector('.video-popup');
+var videoPopupClose = videoPopup.querySelector('.close-button');
+var videoItemsButtons = document.querySelectorAll('.video-button');
+var videoIframe = document.querySelector('iframe');
+for (var i = 0; videoItemsButtons.length; i++) {
+    videoItemsButtons[i].addEventListener('click', function(e) {
+        e.preventDefault();
+        videoPopup.style.display = 'block';
+        videoIframe.src = this.href;
+    })
+}
+closeWindow(videoPopupClose, videoPopup);
 
 /*Burger toggle*/
 var toggleBurger = document.querySelector('.burger-icon');
